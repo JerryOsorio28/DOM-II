@@ -63,11 +63,17 @@ focus.addEventListener('focus', event => {
 
 // })
 //<~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SCROLL
-// const scroll = document.querySelector("html")
-// scroll.addEventListener("scroll", event => {
-//     console.log("its working!")
-        
-// })
+const scroll = document.querySelector("body")
+scroll.addEventListener("scroll", event => {
+    if (window.scrollY > 1000) {
+ 
+        document.querySelector("body").style.background = "lightblue";
+ 
+        setTimeout(function() {
+            document.querySelector("body").style.background = "white";
+        }, 2000);
+    }
+ })
 //<~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SELECT
 const select = document.querySelector("input")
 select.addEventListener("select", event => {

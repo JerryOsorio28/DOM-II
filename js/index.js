@@ -34,18 +34,18 @@ doubleClick.addEventListener("dblclick", event => {
     doubleClick.textContent = "Signed in sucessfully!"
 })
 //<~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DRAG
-const page = document.querySelector("html")
-const drag = document.createElement("dragMe")
+// const page = document.querySelector("html")
+// const drag = document.createElement("dragMe")
 
-drag.textContent = "Drag Me Around!";
-page.appendChild(drag);
-drag.style.fontSize = "2rem";
-drag.style.border = "black";
-drag.style.backgroundColor = "#00BFFF";
+// drag.textContent = "Drag Me Around!";
+// page.appendChild(drag);
+// drag.style.fontSize = "2rem";
+// drag.style.border = "black";
+// drag.style.backgroundColor = "#00BFFF";
 
-drag.addEventListener("drag", event => {
+// drag.addEventListener("drag", event => {
 
-})
+// })
 //<~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~LOAD
 // const load = document.querySelector("img")
 // load.addEventListener('load', event => {
@@ -84,24 +84,27 @@ select.addEventListener("select", event => {
 
 const grandParent = document.querySelector("#grandParent")
 grandParent.addEventListener("click", event => {
-    grandParent.style.border = "1px solid red";
+    grandParent.style.border = "2px solid black";
     grandParent.style.padding = "10px";
-    grandParent.style.padding = "10px";
-    grandParent.align = "center"
+    grandParent.style.borderRadius = "10px";
+    grandParent.style.background = '#17A2B8';
+    // grandParent.align = "center"
     alert("grandParent!");
     
 })
 const parent = document.querySelector("#parent")
 parent.addEventListener("click", event => {
-    parent.style.border = "1px solid red";
+    parent.style.border = "2px solid black";
     parent.style.padding = "10px";
+    parent.style.borderRadius = "10px";
+    
     alert("parent!");
-    event.stopPropagation()
 })
 const child = document.querySelector("#child")
 child.addEventListener("click", event => {
-    child.style.border = "1px solid red";
+    child.style.border = "2px solid black";
     child.style.padding = "10px";
+    child.style.borderRadius = "10px";
     alert("child!");
     
 })

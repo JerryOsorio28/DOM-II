@@ -1,36 +1,41 @@
 body {
   display: flex;
-  /*justify-content: center;*/
+  justify-content: center;
 }
 
 .blocks {
   margin-top: 5%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  margin-top: 30%;
 }
 
-.block {
-  width: 100px;
-  height: 100px;
-  margin: 10px;
+#redRocket {
+  height: 200px;
+  width: 250px;
+  transform: rotate(45deg); 
 }
 
-.block--red {
-  background-color: red;
+#blueRocket {
+  height: 200px;
+  width: 200px;
+  transform: rotate(45deg); 
 }
 
-.block--blue {
-  background-color: blue;
+#greenRocket {
+  height: 200px;
+  width: 200px;
+  transform: rotate(45deg); 
 }
 
-.block--green {
-  background-color: green;
+#pinkRocket {
+  height: 200px;
+  width: 200px;
+  transform: rotate(45deg); 
 }
 
-.block--pink {
-  background-color: pink;
-}
-
-.block--gray {
-  background-color: gray;
+#grayRocket {
+  height: 200px;
+  width: 200px;
+  transform: rotate(45deg); 
 }

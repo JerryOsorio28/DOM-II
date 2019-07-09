@@ -88,7 +88,6 @@ grandParent.addEventListener("click", event => {
     grandParent.style.padding = "10px";
     grandParent.style.borderRadius = "10px";
     grandParent.style.background = '#17A2B8';
-    // grandParent.align = "center"
     alert("grandParent!");
     
 })
@@ -97,7 +96,6 @@ parent.addEventListener("click", event => {
     parent.style.border = "2px solid black";
     parent.style.padding = "10px";
     parent.style.borderRadius = "10px";
-    
     alert("parent!");
 })
 const child = document.querySelector("#child")
@@ -108,3 +106,8 @@ child.addEventListener("click", event => {
     alert("child!");
     
 })
+
+//<~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~GSAP ANIMATIONS
+
+const bus = document.getElementById('bus');
+TweenMax.from("#bus", 1, {x: -700});

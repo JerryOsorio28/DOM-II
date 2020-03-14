@@ -8,9 +8,6 @@
 
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
-
-  <script src="js/index.js" async></script>
-
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -27,12 +24,13 @@
         <a class="nav-link" href="#">Blog</a>
         <a class="nav-link" href="#">Contact</a>
       </nav>
+      <input type="text" placeholder="Search">
     </div>
   </header>
      
   <div class="container home">
     <header class="intro">
-      <img src="img/fun-bus.jpg" alt="bus in the sand">
+      <img src="img/fun-bus.jpg" alt="bus in the sand" id="bus">
       <h2>Welcome To Fun Bus!</h2>
       <p>Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.</p>
     </header>
@@ -80,11 +78,28 @@
         <div class="btn">Sign Me Up!</div>
       </div>
     </section>
+
+    <div class="family">
+      <div class="bubble">
+        Bubble effect! Tap child =>
+      </div>
+      <div id="grandParent">
+        <div id="parent">
+          <div id="child">
+            child
+          </div>
+          parent
+        </div>
+        grandParent
+      </div>
+    </div>
   </div><!-- container -->
 
   <footer class="footer">
     <p>Copyright Fun Bus 2018</p>
   </footer>
-
 </body>
+<script src="js/index.js" async></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
 </html>

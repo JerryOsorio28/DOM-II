@@ -226,6 +226,27 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.family {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-size: 2rem;
+  font-family: 'Indie Flower', cursive;
+}
+.family #granparent {
+  padding: 10px;
+}
+.family #parent {
+  padding: 15px;
+}
+.family #child {
+  padding: 10px;
+}
+.family .bubble {
+  display: flex;
+  align-items: center;
+}
 .home .intro {
   padding: 90px 0 10px;
   border-bottom: 2px dashed #C0C0C0;
